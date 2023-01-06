@@ -5,7 +5,7 @@ See LICENSE folder for this sample’s licensing information.
 
 import SwiftUI
 
-enum Theme: String, CaseIterable, Identifiable, Codable {
+enum Theme: String, CaseIterable, Identifiable {
     case bubblegum
     case buttercup
     case indigo
@@ -33,7 +33,7 @@ enum Theme: String, CaseIterable, Identifiable, Codable {
         Color(rawValue)
     }
     var name: String {
-            rawValue.capitalized
+        rawValue.capitalized
     }
     var id: String {
         name
